@@ -182,7 +182,7 @@ bar {
 }
 
 # Monitor config
-exec_always bash -c '/usr/bin/xrandr --output HDMI-0 --scale 1.5x1.5 --pos 0x0 --output DP-0 --pos 3840x0 --primary'
+exec_always bash -c '/usr/bin/xrandr --output HDMI-0 --scale 1.5x1.5 --pos 0x0 --output DP-0 --pos 2880x0 --primary'
 
 # Make the currently focused window a scratchpad
 bindsym $mod+Shift+minus move scratchpad
