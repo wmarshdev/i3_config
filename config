@@ -179,6 +179,8 @@ bindsym $mod+r mode "resize"
 bar {
         position bottom
         status_command i3blocks
+        wheel_up_cmd nop
+        wheel_down_cmd nop
 }
 
 # Monitor config
