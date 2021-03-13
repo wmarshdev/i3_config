@@ -194,3 +194,7 @@ bindsym $mod+minus scratchpad show
 
 # Window switcher
 bindsym $mod+g exec "rofi -show window"
+
+# Volume set
+bindsym $mod+bracketleft exec "amixer -D pulse sset Master 10%-"
+bindsym $mod+bracketright exec "amixer -D pulse sset Master 10%+"
