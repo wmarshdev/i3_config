@@ -196,5 +196,6 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+g exec "rofi -show window"
 
 # Volume set
-bindsym $mod+bracketleft exec "amixer -D pulse sset Master 10%-"
-bindsym $mod+bracketright exec "amixer -D pulse sset Master 10%+"
+bindsym $mod+bracketright exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
+bindsym $mod+bracketleft exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
+bindsym $mod+m exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
