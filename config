@@ -199,3 +199,7 @@ bindsym $mod+g exec "rofi -show window"
 bindsym $mod+bracketright exec amixer -q -D pulse sset Master 5%+ && pkill -RTMIN+10 i3blocks 
 bindsym $mod+bracketleft exec amixer -q -D pulse sset Master 5%- && pkill -RTMIN+10 i3blocks
 bindsym $mod+m exec amixer -q -D pulse sset Master toggle && pkill -RTMIN+10 i3blocks
+
+# Lock
+
+bindsym $mod+shift+x exec "lock"
